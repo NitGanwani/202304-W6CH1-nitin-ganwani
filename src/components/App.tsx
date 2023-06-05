@@ -1,6 +1,7 @@
-import { Actions } from "./actions/actions";
 import { Info } from "./info/Info";
 import { Keyboard } from "./keyboard/Keyboard";
+import "../styles.css";
+import { Actions } from "./actions/actions";
 
 export function App() {
   return (
