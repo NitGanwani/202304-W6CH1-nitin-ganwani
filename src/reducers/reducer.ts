@@ -12,5 +12,8 @@ export function phoneReducer(state: PhoneState, action: PhoneAction) {
     case actionTypes.add:
       payload = action.payload as string;
       return { ...state, phoneNumber: state.phoneNumber + payload };
+
+    default:
+      return { ...state };
   }
 }
