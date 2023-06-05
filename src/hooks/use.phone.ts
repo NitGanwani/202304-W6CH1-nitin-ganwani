@@ -30,10 +30,15 @@ export function usePhone() {
     }
   }
 
+  function handleDelete() {
+    dispatch(action.deleteNumberAction());
+  }
+
   return {
     screen: phoneState.phoneNumber,
     isCalling: phoneState.isCalling,
     handleAddNumber,
+    handleDelete,
     phoneNumbers,
   };
 }
